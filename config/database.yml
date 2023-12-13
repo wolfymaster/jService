@@ -32,9 +32,9 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: postgres
+  database: <%= ENV["DB_DATABASE"] %>
   pool: 5
-  username: postgres	
-  password: <%= ENV["DB_PASS"] %>
-  host: database-1.cujivdbowejw.us-east-2.rds.amazonaws.com
-  port: 5432
+  username: <%= ENV["DB_USERNAME"] %>	
+  password: <%= ENV["DB_PASSWORD"] %>
+  host: <%= ENV["DB_HOST"] %>
+  port: <%= ENV["DB_PORT"] %>
