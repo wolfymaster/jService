@@ -20,6 +20,8 @@ gem 'rack-attack'
 
 gem 'figaro'
 
+# debug
+gem "debug", require: false
 
 # #for search
 # gem 'pg_search'
